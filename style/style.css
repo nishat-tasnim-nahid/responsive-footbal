@@ -1,14 +1,19 @@
-/* add Google font to style */
+/*---------------------------------
+     add Google font to style 
+-----------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
 }
 
-/* Add Style on Top Banner Section */
+/* -----------------------------------
+    Add Style on Top Banner Section 
+--------------------------------------*/
 .bannar{
-    margin-left: 0px;
+    /* margin-left: 0px;
     margin-top: 0px;
-    margin-right: 0px;
+    margin-right: 0px; */
+    width: 100%;
     display: flex;
     background-color: #2D25A0;
     
@@ -18,7 +23,7 @@ body{
       
 }
 .bannar-title h1{
-    /* width: 485px; */
+    
     color: white;
     font-size: 50px;
 }
@@ -31,7 +36,9 @@ button{
     color: white;
     transition: transform 2s ease-in-out;
 }
-/* add animation on button */
+/* --------------------------------
+    add animation on button 
+-----------------------------------*/
 button:hover{
     transform: scale(1.3);
 }
@@ -45,13 +52,17 @@ button i{
     margin: 175px 141px 86px 0;
     
 }
-/* Align conten on center */
+/*--------------------------------- 
+    Align conten on center 
+-----------------------------------*/
 main , footer{
     display: flex;
     justify-content: center;
     width: 100%;
 }
-/* add style on middle section */
+/*----------------------------------
+    add style on middle section 
+ -----------------------------------*/
 .mid-container{
     width: 100%;
 }
@@ -67,8 +78,7 @@ main , footer{
  }
 
 .profile {
-    /* height: 457px;
-    width: 330px; */
+    
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 10px;
     
@@ -84,7 +94,9 @@ main , footer{
     align-items: left; 
 }
 
-/* add style on fotter section */
+/* --------------------------------
+    add style on fotter section 
+-----------------------------------*/
 .footer-container{
     
 }
@@ -98,15 +110,70 @@ main , footer{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    font-size: 18px; 
     
 }
-/* Add style for font awsome Icone */
+/* -----------------------------------
+    Add style for font awsome Icone -----------------------------------*/
 .s-icons i{
     margin-right: 22px;
     background-color: #969BAB;
-    padding: 8px;
-    border-radius: 20px;
+    padding: 5px;
+    border-radius: 25px;
     color:rgba(2, 2, 2, 0.397)
 }
 
+/* -------------------
+    Media Queries 
+----------------------*/
+
+/* Mobile Devices */
+
+@media only screen and (max-width:695px){
+    
+    .bannar{
+        
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .bannar-title{
+        margin: 122px 66px 50px 16px;
+          
+    }
+    .bannar-title h1{
+        font-size: 36px;
+    }
+  
+    button:hover{
+        transform: scale(1.1);
+    }
+    .bannar-img img{
+        width: 329px;
+        height: 260px;
+        margin: 0px 18px 62px 18px; 
+    }
+
+    .profiles{
+        margin-top: 47px;
+        margin-right: 15px;
+        margin-left: 15px;
+        width: 330px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 42px;
+        
+     }
+     
+    .footer-container{
+        margin-bottom: 187px;
+    
+    }
+    .footer-items img{
+        width: 271px;
+        height: 63px;
+        margin: 55px 71px 25px 18px;
+    
+    } 
+                                   
+}
 
