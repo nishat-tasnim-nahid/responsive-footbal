@@ -6,9 +6,10 @@ body{
 .bannar{
     margin-left: 0px;
     margin-top: 0px;
-    margin-right: 0;
+    margin-right: 0px;
     display: flex;
     background-color: #2D25A0;
+    
 }
 .bannar-title{
     margin: 207px 102px 169px 120px;
@@ -42,19 +43,20 @@ button{
     margin: 175px 141px 86px 0;
     
 }
-main{
+main , footer{
     display: flex;
     justify-content: center;
+    width: 100%;
 
 }
 .mid-container{
-    
+    width: 100%;
 
 }
 .profiles{
     margin-top: 70px;
     margin-right: 210px;
-    margin-left: 180px;
+    margin-left: 120px;
     width: 1050px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -79,3 +81,28 @@ main{
     font-size: 16px;
     align-items: left; 
 }
+.footer-container{
+    
+
+}
+.footer-items img{
+    width: 484px;
+    height: 110px;
+    margin-top: 158px;
+
+}
+.footer-items p {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.s-icons i{
+    margin-right: 22px;
+    background-color: #969BAB;
+    padding: 8px;
+    border-radius: 20px;
+    color:rgba(2, 2, 2, 0.397)
+}
+
+
