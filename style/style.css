@@ -1,56 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
+}
 
-}
-/* header-side */
-header{
-    background-color: #2D25A0;
+.bannar{
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0;
     display: flex;
+    background-color: #2D25A0;
 }
-.header-title{
-    margin: 207px 102px 169px 156px;
+.bannar-title{
+    margin: 207px 102px 169px 120px;
+    
+    
 }
-.header-title h1{
-    color: #FFFFFF;
-    margin-bottom: 27px;
+.bannar-title h1{
+    /* width: 485px; */
+    color: white;
+    font-size: 50px;
+    
+    
 }
 button{
+    /* margin-top: 27px; */
     width: 168px;
     height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
     background-color: #E02C6D;
-    padding: 10px 24px;
-    transition: width, 5s;
-
+    color: white;
 }
-button:hover{
-    width: 210px;
-
+.fa-arrow-right{
+    position: relative;
+    left: 10px;
 }
-.bannar img{
-    width: 556.01px;
+.bannar-img img{
+    width: 556px;
     height: 438px;
-    margin: 153px 141px 86px 0;
+    margin: 175px 141px 86px 0;
+    
 }
+main{
+    display: flex;
+    justify-content: center;
 
-/* main-side */
+}
+.mid-container{
+    
 
-.blogs{
+}
+.profiles{
+    margin-top: 70px;
+    margin-right: 210px;
+    margin-left: 180px;
+    width: 1050px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 27px, 30px;
-}
-.blog img{
-    width: 300px;
-    height: 256px;
+    grid-column-gap: 45px;
+    grid-row-gap: 27px;
+ }
+
+.profile {
+    /* height: 457px;
+    width: 330px; */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    
 
 }
-.blog-details{
+.picture img{
+    height: 256px;
     width: 300px;
-    height: 154px;
-    background-color: ;
+    margin-bottom: -20px;
 }
-h3{
-    color: #18191F;
-    font-size: 28px;
-    font-weight: bold;
+.details h1 p{
+    font-size: 16px;
+    align-items: left; 
 }
